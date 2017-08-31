@@ -1,8 +1,34 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class LWTbootcamp {
 
     public static void main(String[] args){
+        //hello name
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = scan.next();
+        System.out.println(helloName(name));
+
+        System.out.println("what number would you like to use for sum, mult");
+        int num = scan.nextInt();
+        System.out.println("sum: "+sumN(num)+" mult: "+mult(num));
+
+        System.out.println("would you like to sum, multiply, or both?");
+        String ans = scan.next();
+        System.out.println("enter a number");
+        num = scan.nextInt();
+        switch (ans) {
+            case "sum":
+                System.out.println("sum is: "+sumN(num));
+                break;
+            case "multiply":
+                System.out.println("product is :"+mult(num));
+                break;
+            case "both":
+                System.out.println("sum: "+sumN(num)+" mult: "+mult(num));
+                break;
+        }
 
     }
 

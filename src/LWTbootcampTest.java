@@ -76,6 +76,13 @@ public class LWTbootcampTest {
     }
 
     @Test
+    public void rotateTest4(){
+        int[] a = {1,2,3,4,5,6};
+        int[] res = {1,2,3,4,5,6};
+        assertEquals(Arrays.toString(res), Arrays.toString(LWTbootcamp.rotate(a, 0)));
+    }
+
+    @Test
     public void mergeTest(){
         int[] a = {1,4,6};
         int[] b = {2,3,5};
